@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 255, 255)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="BCreate">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color:rgb(255, 255, 255);
+border:1px solid;
+border-radius: 10px;
+}
+
+QPushButton:hover {
+background-color:rgb(197, 197, 197);
+
+    border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0 ,0 ,200);
+}
+
+ 
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>创建进程</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BAuto">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>40</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color:rgb(255, 255, 255);
+border:1px solid #717171;
+border-radius: 10px;
+}
+
+QPushButton:hover {
+background-color:rgb(197, 197, 197);
+
+    border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0 ,0 ,200);
+}
+
+ 
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>自动创建进程</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BFCFS">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>40</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color:rgb(255, 255, 255);
+border:1px solid #717171;
+border-radius: 10px;
+}
+
+QPushButton:hover {
+background-color:rgb(197, 197, 197);
+
+    border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0 ,0 ,200);
+}
+
+ 
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>FCFS算法</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BSPN">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>40</y>
+      <width>111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color:rgb(255, 255, 255);
+border:1px solid #717171;
+border-radius: 10px;
+}
+
+QPushButton:hover {
+background-color:rgb(197, 197, 197);
+
+    border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0 ,0 ,200);
+}
+
+ 
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>SPN算法</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>470</y>
+      <width>901</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>LCDMono2</family>
+      <pointsize>28</pointsize>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>ProcessorMangement</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BCheck">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>40</y>
+      <width>101</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color:rgb(255, 255, 255);
+border:1px solid #717171;
+border-radius: 10px;
+}
+
+QPushButton:hover {
+background-color:rgb(197, 197, 197);
+
+    border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0 ,0 ,200);
+}
+
+ 
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>查看已有进程</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>741</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:1px solid;
+border-radius: 10px;</string>
+    </property>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+   <widget class="QPushButton" name="BHRRN">
+    <property name="geometry">
+     <rect>
+      <x>650</x>
+      <y>40</y>
+      <width>111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+background-color:rgb(255, 255, 255);
+border:1px solid #717171;
+border-radius: 10px;
+}
+
+QPushButton:hover {
+background-color:rgb(197, 197, 197);
+
+    border-color: rgba(255, 255, 255, 200);
+    color: rgba(0, 0 ,0 ,200);
+}
+
+ 
+
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string>HRRN算法</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="font">
+     <font>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="tips"/>
+   </widget>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="tips">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>tips</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="visible">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
